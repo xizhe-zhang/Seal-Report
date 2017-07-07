@@ -555,7 +555,6 @@ namespace SealWebServer.Controllers
             return Content(_noReportFoundMessage);
         }
 
-
         #region private methods
 
         void checkSWIAuthentication()
@@ -571,7 +570,8 @@ namespace SealWebServer.Controllers
         string getFullPath(string path)
         {
             if (path.StartsWith(SWIFolder.GetPersonalRoot())) return Repository.GetPersonalFolder(WebUser) + path.Substring(1);
-            else return Repository.ReportsFolder + path;
+            else
+            return Repository.ReportsFolder + path;
         }
 
         SWIFolder getParentFolder(string path)

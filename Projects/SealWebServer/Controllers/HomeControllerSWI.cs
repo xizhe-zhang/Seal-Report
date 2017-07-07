@@ -344,11 +344,120 @@ namespace SealWebServer.Controllers
         }
 
 
-        [HttpPost]
-        public ActionResult SWExecuteReport(string path, bool? render, string viewGUID, string outputGUID)
+        //[HttpPost]
+        //public ActionResult SWExecuteReport(string path, bool? render, string viewGUID, string outputGUID)
+        //{
+        //    try
+        //    {
+        //        //if (!CheckAuthentication()) return Content(_loginContent);
+
+        //        Report report = null;
+        //        Repository repository = null;
+
+        //        SWIFolder folder = getParentFolder(path);
+        //        if (folder.right == 0) throw new Exception("Error: no right on this folder");
+        //        if (!string.IsNullOrEmpty(outputGUID) && (FolderRight)folder.right == FolderRight.Execute) throw new Exception("Error: no right to execute output on this folder");
+
+        //        string filePath = getFullPath(path);
+        //        if (!System.IO.File.Exists(filePath)) throw new Exception("Error: report does not exist");
+        //        repository = Repository.CreateFast();
+        //        report = Report.LoadFromFile(filePath, repository);
+
+        //        var execution = initReportExecution(report, viewGUID, outputGUID);
+        //        execution.RenderHTMLDisplayForViewer();
+        //        return getFileResult(report.HTMLDisplayFilePath, report);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return HandleException(ex);
+        //    }
+        //}
+
+        private void setFolder()
         {
+            var path = "\\";
+            SWIFolder folder = getFolder(path);
+            var files = new List<SWIFile>();
+            if (folder.right > 0)
+            {
+                foreach (string newPath in Directory.GetFiles(folder.GetFullPath(), "*.*"))
+                {
+                    if (folder.files && FileHelper.IsSealReportFile(newPath)) continue;
+
+                    files.Add(new SWIFile()
+                    {
+                        path = folder.Combine(Path.GetFileName(newPath)),
+                        name = Repository.TranslateFileName(newPath) + (FileHelper.IsSealReportFile(newPath) ? "" : Path.GetExtension(newPath)),
+                        last = System.IO.File.GetLastWriteTime(newPath).ToString("G", Repository.CultureInfo),
+                        isReport = FileHelper.IsSealReportFile(newPath),
+                        right = folder.right
+                    });
+                }
+            }
+            SetCookie(SealLastFolderCookieName, path);
+        }
+
+
+        private void inlineLogin()
+        {
+            var user = "";
+            var password = "";
+            if (WebUser == null || !WebUser.IsAuthenticated || WebUser.WebUserName != user)
+            {
+                CreateRepository();
+                CreateWebUser();
+                WebUser.WebPrincipal = User;
+                WebUser.WebUserName = user;
+                WebUser.WebPassword = password;
+                Authenticate();
+
+                if (!WebUser.IsAuthenticated) throw new Exception(string.IsNullOrEmpty(WebUser.Error) ? Translate("Invalid user name or password") : WebUser.Error);
+            }
+
+            //Set culture from cookie
+            string culture = GetCookie(SealCultureCookieName);
+            if (!string.IsNullOrEmpty(culture)) Repository.SetCultureInfo(culture);
+        }
+
+        private void inlineGetRootFolder()
+        {
+            checkSWIAuthentication();
+            List<SWIFolder> result = new List<SWIFolder>();
+            //Personal
+            if (WebUser.PersonalFolderRight != PersonalFolderRight.None)
+            {
+                var personalFolder = getFolder(SWIFolder.GetPersonalRoot());
+                fillFolder(personalFolder);
+                result.Add(personalFolder);
+            }
+            //Report
+            var folder = getFolder("\\");
+            fillFolder(folder);
+            result.Add(folder);
+
+            WebUser.Folders = result;
+        }
+
+        [HttpOptions]
+        public string SWExecuteReport()
+        {
+            return null;
+        }
+
+        [HttpPost]
+        public ActionResult SWExecuteReport(string Ami_token, string Report_name, string ProjectId)
+        {
+            //var path = "\\Dashboard - Sales.srex";
+            var path = Report_name;
+            var render = false;
+            var viewGUID = "";
+            var outputGUID = "";
+
             try
             {
+                this.inlineLogin();
+                this.inlineGetRootFolder();
+
                 if (!CheckAuthentication()) return Content(_loginContent);
 
                 Report report = null;
@@ -362,6 +471,8 @@ namespace SealWebServer.Controllers
                 if (!System.IO.File.Exists(filePath)) throw new Exception("Error: report does not exist");
                 repository = Repository.CreateFast();
                 report = Report.LoadFromFile(filePath, repository);
+                report.Models[0].Restrictions[0].Value1 = ProjectId;
+                report.Models[1].Restrictions[1].Value1 = ProjectId;
 
                 var execution = initReportExecution(report, viewGUID, outputGUID);
                 execution.RenderHTMLDisplayForViewer();
@@ -372,7 +483,6 @@ namespace SealWebServer.Controllers
                 return HandleException(ex);
             }
         }
-
 
         [HttpPost]
         public ActionResult SWViewFile(string path)

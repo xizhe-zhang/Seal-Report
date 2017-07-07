@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <GUID>4a9dbdc5-fe30-40db-9290-5aff84d23e1b</GUID>
+  <Sources>
+    <ReportSource>
+      <GUID>3b195ffd-8d94-4463-a091-b53e41f7255f</GUID>
+      <Name>RSS No SQL Source (Repository)</Name>
+      <ConnectionFolder />
+      <TableFolder />
+      <CategoryFolder />
+      <JoinFolder />
+      <EnumFolder />
+      <Connections />
+      <ConnectionGUID>1</ConnectionGUID>
+      <IsDefault>false</IsDefault>
+      <IsNoSQL>true</IsNoSQL>
+      <InitScript />
+      <TasksScript />
+      <IgnorePrePostError>false</IgnorePrePostError>
+      <MetaData>
+        <Tables />
+        <Joins />
+        <Enums />
+      </MetaData>
+      <MetaSourceGUID>a9f32151-1da0-474e-8ef0-5b3dee810058</MetaSourceGUID>
+    </ReportSource>
+    <ReportSource>
+      <GUID>70c98350-c7c4-4d3a-ba27-ad57a5d1eec8</GUID>
+      <Name>AmiBI</Name>
+      <ConnectionFolder />
+      <TableFolder />
+      <CategoryFolder />
+      <JoinFolder />
+      <EnumFolder />
+      <Connections>
+        <MetaConnection>
+          <GUID>07850fd8-f4a9-44fb-8485-6dfbf33f0056</GUID>
+          <Name>connection</Name>
+          <DatabaseType>Standard</DatabaseType>
+          <ConnectionString>Provider=SQLNCLI11.0;Persist Security Info=False;Initial Catalog=AmiBI;Data Source=10.168.80.242;Initial File Name="";Server SPN=""</ConnectionString>
+          <DateTimeFormat>yyyy-MM-dd HH:mm:ss</DateTimeFormat>
+          <UserName>sa</UserName>
+          <Password>J83zrSYtWeyhq6hSjeJEvg==</Password>
+        </MetaConnection>
+      </Connections>
+      <ConnectionGUID>07850fd8-f4a9-44fb-8485-6dfbf33f0056</ConnectionGUID>
+      <IsDefault>false</IsDefault>
+      <IsNoSQL>false</IsNoSQL>
+      <InitScript />
+      <TasksScript />
+      <IgnorePrePostError>false</IgnorePrePostError>
+      <MetaData>
+        <Tables>
+          <MetaTable>
+            <GUID>47aa1a24-ec14-4be5-8eb9-7adcaea14ae8</GUID>
+            <Alias>SealMasterTable</Alias>
+            <DynamicColumns>true</DynamicColumns>
+            <KeepColumnNames>false</KeepColumnNames>
+            <MustRefresh>false</MustRefresh>
+            <IgnorePrePostError>false</IgnorePrePostError>
+            <Columns />
+          </MetaTable>
+          <MetaTable>
+            <GUID>49e7e3ab-11f9-4b4d-9f6d-13d03267b179</GUID>
+            <Name>dbo.SalesOrder</Name>
+            <DynamicColumns>false</DynamicColumns>
+            <KeepColumnNames>true</KeepColumnNames>
+            <Type>TABLE</Type>
+            <MustRefresh>false</MustRefresh>
+            <IgnorePrePostError>false</IgnorePrePostError>
+            <Columns>
+              <MetaColumn>
+                <GUID>aa0059dc-4314-47e9-98c5-6415e59c4db7</GUID>
+                <Name>dbo.SalesOrder.SalesOrderId</Name>
+                <Type>Numeric</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>SalesOrderId</DisplayName>
+                <DisplayOrder>1</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>N0</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>b511638d-12cc-43b9-96bd-607db2835df9</GUID>
+                <Name>dbo.SalesOrder.Bi_ref_id</Name>
+                <Type>Numeric</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>Bi_ref_id</DisplayName>
+                <DisplayOrder>2</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>N0</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>7dc2181c-762a-4d35-ad83-6365939c06e8</GUID>
+                <Name>dbo.SalesOrder.ProjectCode</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ProjectCode</DisplayName>
+                <DisplayOrder>4</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>f851e8e9-5bd5-44c6-abf8-7c88839d6d96</GUID>
+                <Name>dbo.SalesOrder.OrderNo</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>OrderNo</DisplayName>
+                <DisplayOrder>5</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>ba97b437-14e6-4299-8a49-fa9a7791568c</GUID>
+                <Name>dbo.SalesOrder.OrigOrderNo</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>OrigOrderNo</DisplayName>
+                <DisplayOrder>6</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>99d528c4-6d63-4232-80ce-f22be82eea10</GUID>
+                <Name>dbo.SalesOrder.OrderDate</Name>
+                <Type>DateTime</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>OrderDate</DisplayName>
+                <DisplayOrder>7</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>d</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>bea73ae5-8ff9-4fa5-9335-a99d323c3296</GUID>
+                <Name>dbo.SalesOrder.CustomerCode</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>CustomerCode</DisplayName>
+                <DisplayOrder>8</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>3773cd43-5826-44a2-be3e-19fe679ddde1</GUID>
+                <Name>dbo.SalesOrder.CustomerName</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>CustomerName</DisplayName>
+                <DisplayOrder>9</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>0461ce08-e22a-4fa7-9d84-a99846510ff0</GUID>
+                <Name>dbo.SalesOrder.CHCode</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>CHCode</DisplayName>
+                <DisplayOrder>10</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>9343e2ef-dff6-4e23-a89a-74c971f04f7c</GUID>
+                <Name>dbo.SalesOrder.CHName</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>CHName</DisplayName>
+                <DisplayOrder>11</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>ca7aaa12-3fbc-49c2-abd0-f83abc65fb54</GUID>
+                <Name>dbo.SalesOrder.StoreCode</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>StoreCode</DisplayName>
+                <DisplayOrder>12</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>44b65d7b-3a3e-46bb-96fa-aee2fb041dd0</GUID>
+                <Name>dbo.SalesOrder.StoreName</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>StoreName</DisplayName>
+                <DisplayOrder>13</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>5c732b6a-9487-4fdc-bf69-68628957c3ea</GUID>
+                <Name>dbo.SalesOrder.BillToFirstName</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToFirstName</DisplayName>
+                <DisplayOrder>14</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>78099a47-2106-4238-bd12-b4d2666827b5</GUID>
+                <Name>dbo.SalesOrder.BillToLastName</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToLastName</DisplayName>
+                <DisplayOrder>15</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>ef076580-7de3-4271-850c-96ef83bd6e2b</GUID>
+                <Name>dbo.SalesOrder.BillToCompany</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToCompany</DisplayName>
+                <DisplayOrder>16</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>8f249275-1c25-47c8-a855-c3d5537c1a61</GUID>
+                <Name>dbo.SalesOrder.BillToZip</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToZip</DisplayName>
+                <DisplayOrder>17</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>69e1a7e2-799c-4460-89a8-042772660905</GUID>
+                <Name>dbo.SalesOrder.BillToPhone</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToPhone</DisplayName>
+                <DisplayOrder>18</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>f95ea4e3-6978-4d5f-8184-b31385a05d57</GUID>
+                <Name>dbo.SalesOrder.BillToEmail</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToEmail</DisplayName>
+                <DisplayOrder>19</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>1d9f1def-e498-4f77-b346-f676fb46ddc0</GUID>
+                <Name>dbo.SalesOrder.BillToAddress1</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToAddress1</DisplayName>
+                <DisplayOrder>20</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>9a1fcf96-de40-4175-be80-159b92d101f6</GUID>
+                <Name>dbo.SalesOrder.BillToAddress2</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToAddress2</DisplayName>
+                <DisplayOrder>21</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>3dcb089a-b000-464f-9a28-b4c3de7453e5</GUID>
+                <Name>dbo.SalesOrder.BillToCity</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToCity</DisplayName>
+                <DisplayOrder>22</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>d81944c9-fe0f-45a0-9f10-b22506d1c5ed</GUID>
+                <Name>dbo.SalesOrder.BillToState</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToState</DisplayName>
+                <DisplayOrder>23</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>71a744aa-92b9-4188-a59f-ac8a635d1be2</GUID>
+                <Name>dbo.SalesOrder.BillToCountry</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>BillToCountry</DisplayName>
+                <DisplayOrder>24</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>daa8239c-9378-4060-a3bc-7e96b3dd211d</GUID>
+                <Name>dbo.SalesOrder.ShipToFirstName</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToFirstName</DisplayName>
+                <DisplayOrder>25</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>07f3bb71-0a1d-441e-b8a4-70df6706cd0b</GUID>
+                <Name>dbo.SalesOrder.ShipToLastName</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToLastName</DisplayName>
+                <DisplayOrder>26</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>5da52111-687e-4a98-b8bc-4687d2b67235</GUID>
+                <Name>dbo.SalesOrder.ShipToCompany</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToCompany</DisplayName>
+                <DisplayOrder>27</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>5925d669-1b84-435a-817e-05841035dadb</GUID>
+                <Name>dbo.SalesOrder.ShipToZip</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToZip</DisplayName>
+                <DisplayOrder>28</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>a4fa58e4-269f-41f1-86ec-4e6a6b97bff5</GUID>
+                <Name>dbo.SalesOrder.ShipToPhone</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToPhone</DisplayName>
+                <DisplayOrder>29</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>63d59a24-5daa-4733-8d31-2ba8a0afd63a</GUID>
+                <Name>dbo.SalesOrder.ShipToEmail</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToEmail</DisplayName>
+                <DisplayOrder>30</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>7843d23b-b48d-4bbf-a002-a595b9a3fc53</GUID>
+                <Name>dbo.SalesOrder.ShipToAddress1</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToAddress1</DisplayName>
+                <DisplayOrder>31</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>767d9b44-86c7-43a0-971a-db1b949c26b2</GUID>
+                <Name>dbo.SalesOrder.ShipToAddress2</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToAddress2</DisplayName>
+                <DisplayOrder>32</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>25534e3f-1298-4b45-84bb-1076ec5c88c1</GUID>
+                <Name>dbo.SalesOrder.ShipToCity</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToCity</DisplayName>
+                <DisplayOrder>33</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>342d5286-d0b8-4fd9-8f77-5477d69fac0c</GUID>
+                <Name>dbo.SalesOrder.ShipToState</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToState</DisplayName>
+                <DisplayOrder>34</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>99ef6c7d-0ae6-4fce-a302-775f919c8c0b</GUID>
+                <Name>dbo.SalesOrder.ShipToCountry</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ShipToCountry</DisplayName>
+                <DisplayOrder>35</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>a4204f4f-4b3f-478c-a7de-fa6670064a92</GUID>
+                <Name>dbo.SalesOrder.SkuCode</Name>
+                <Type>Text</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>SkuCode</DisplayName>
+                <DisplayOrder>37</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>939dfd3a-2fda-423d-996a-397ed5a735f5</GUID>
+                <Name>dbo.SalesOrder.SkuName</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>SkuName</DisplayName>
+                <DisplayOrder>38</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>7dd2782e-7af0-40bf-9185-d2354a5186c2</GUID>
+                <Name>dbo.SalesOrder.OrderQty</Name>
+                <Type>Numeric</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>OrderQty</DisplayName>
+                <DisplayOrder>39</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>N0</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>3e203c5f-8f75-411f-93e5-926d22965a55</GUID>
+                <Name>dbo.SalesOrder.Price</Name>
+                <Type>Numeric</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>Price</DisplayName>
+                <DisplayOrder>40</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>N0</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>24f84a95-263a-471c-a197-a35f4a2e18c0</GUID>
+                <Name>dbo.SalesOrder.Amount</Name>
+                <Type>Numeric</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>Amount</DisplayName>
+                <DisplayOrder>41</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>N0</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>42f0a3c1-53a4-4ec1-94a4-1d9ace1fd1bd</GUID>
+                <Name>dbo.SalesOrder.Tax</Name>
+                <Type>Numeric</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>Tax</DisplayName>
+                <DisplayOrder>42</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>N0</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>c0794142-8871-4380-a212-86474a32089e</GUID>
+                <Name>dbo.SalesOrder.CommitStatus</Name>
+                <Type>Numeric</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>CommitStatus</DisplayName>
+                <DisplayOrder>43</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>N0</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>1aa7b31f-1ac7-4128-95ef-0e7701a8f2f7</GUID>
+                <Name>dbo.SalesOrder.CommitDate</Name>
+                <Type>DateTime</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>CommitDate</DisplayName>
+                <DisplayOrder>44</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>d</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>21c650e8-174c-4fb2-9e5c-1621767000df</GUID>
+                <Name>dbo.SalesOrder.Stamp</Name>
+                <Type>Numeric</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>Stamp</DisplayName>
+                <DisplayOrder>45</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>N0</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>1ba65d5b-e9f8-4109-8963-c3725cebb311</GUID>
+                <Name>dbo.SalesOrder.ItemCatName</Name>
+                <Type>UnicodeText</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ItemCatName</DisplayName>
+                <DisplayOrder>36</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format />
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+              <MetaColumn>
+                <GUID>f9b73707-64db-4eef-9d50-82207e7395e8</GUID>
+                <Name>dbo.SalesOrder.ProjectId</Name>
+                <Type>Numeric</Type>
+                <IsAggregate>false</IsAggregate>
+                <Category>dbo.SalesOrder</Category>
+                <Tag />
+                <DisplayName>ProjectId</DisplayName>
+                <DisplayOrder>3</DisplayOrder>
+                <NumericStandardFormat>Default</NumericStandardFormat>
+                <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+                <Format>N0</Format>
+                <HasHTMLTags xsi:nil="true" />
+                <DrillChildren />
+                <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+                <SubReports />
+              </MetaColumn>
+            </Columns>
+          </MetaTable>
+        </Tables>
+        <Joins />
+        <Enums />
+      </MetaData>
+    </ReportSource>
+  </Sources>
+  <Models>
+    <ReportModel>
+      <GUID>3dd45745-518b-454b-8d7d-2ef2d1165f50</GUID>
+      <Name>CH_Amount</Name>
+      <SourceGUID>70c98350-c7c4-4d3a-ba27-ad57a5d1eec8</SourceGUID>
+      <ConnectionGUID>2</ConnectionGUID>
+      <SqlSelect />
+      <SqlFrom />
+      <SqlGroupBy />
+      <SqlOrderBy />
+      <IgnorePrePostError>false</IgnorePrePostError>
+      <BuildTimeout>4000</BuildTimeout>
+      <ForceJoinTableGUID />
+      <AvoidJoinTableGUID />
+      <Elements>
+        <ReportElement>
+          <GUID>ebad5909-e610-4be9-9565-d56609fe13a5</GUID>
+          <Name>dbo.SalesOrder.CHCode</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Default</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format />
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Row</PivotPosition>
+          <SortOrder>Automatic Ascendant</SortOrder>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Count</AggregateFunction>
+          <CalculationOption>No</CalculationOption>
+          <ShowTotal>No</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>Axis</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>ScatterChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>0461ce08-e22a-4fa7-9d84-a99846510ff0</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+        </ReportElement>
+        <ReportElement>
+          <GUID>73c092cd-4a4a-466b-8b6d-5456bf0f0ff4</GUID>
+          <Name>dbo.SalesOrder.Amount</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Default</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format>N0</Format>
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Data</PivotPosition>
+          <SortOrder>Automatic Ascendant</SortOrder>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Sum</AggregateFunction>
+          <CalculationOption>No</CalculationOption>
+          <ShowTotal>No</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>NVD3Serie</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>PieChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>24f84a95-263a-471c-a197-a35f4a2e18c0</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+        </ReportElement>
+        <ReportElement>
+          <GUID>ce9f0cf2-cd30-4cad-b71b-22b969eb461d</GUID>
+          <Name>dbo.SalesOrder.CHCode</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Default</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format />
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Row</PivotPosition>
+          <SortOrder>Automatic Ascendant</SortOrder>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Count</AggregateFunction>
+          <CalculationOption>No</CalculationOption>
+          <ShowTotal>No</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>None</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>ScatterChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>0461ce08-e22a-4fa7-9d84-a99846510ff0</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+        </ReportElement>
+        <ReportElement>
+          <GUID>e58b9283-5aa2-43aa-9ae0-6a7bea7deec4</GUID>
+          <Name>dbo.SalesOrder.Amount</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Default</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format>N0</Format>
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Data</PivotPosition>
+          <SortOrder>Automatic Ascendant</SortOrder>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Sum</AggregateFunction>
+          <CalculationOption>No</CalculationOption>
+          <ShowTotal>No</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>None</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>ScatterChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>24f84a95-263a-471c-a197-a35f4a2e18c0</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+        </ReportElement>
+      </Elements>
+      <Restriction>[85131aaf-7b77-4aa8-bb25-4f43021836aa]</Restriction>
+      <Restrictions>
+        <ReportRestriction>
+          <GUID>85131aaf-7b77-4aa8-bb25-4f43021836aa</GUID>
+          <Name>dbo.SalesOrder.ProjectId</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Default</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format>N0</Format>
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Row</PivotPosition>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Sum</AggregateFunction>
+          <CalculationOption>No</CalculationOption>
+          <ShowTotal>No</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>None</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>ScatterChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>f9b73707-64db-4eef-9d50-82207e7395e8</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+          <Prompt>None</Prompt>
+          <Required>false</Required>
+          <TypeRe>Default</TypeRe>
+          <DateTimeStandardFormatRe>Default</DateTimeStandardFormatRe>
+          <NumericStandardFormatRe>Default</NumericStandardFormatRe>
+          <FormatRe>N0</FormatRe>
+          <UseAsParameter>false</UseAsParameter>
+          <Operator>Equal</Operator>
+          <Value1>999999</Value1>
+          <EnumValues />
+          <Date1>0001-01-01T00:00:00</Date1>
+          <Date2>0001-01-01T00:00:00</Date2>
+          <Date3>0001-01-01T00:00:00</Date3>
+          <Date4>0001-01-01T00:00:00</Date4>
+        </ReportRestriction>
+      </Restrictions>
+      <AggregateRestriction />
+      <AggregateRestrictions />
+    </ReportModel>
+    <ReportModel>
+      <GUID>a51f46e4-ba5a-464e-a102-539e735d27d2</GUID>
+      <Name>Sales_Amount_Day</Name>
+      <SourceGUID>70c98350-c7c4-4d3a-ba27-ad57a5d1eec8</SourceGUID>
+      <ConnectionGUID>2</ConnectionGUID>
+      <IgnorePrePostError>false</IgnorePrePostError>
+      <BuildTimeout>4000</BuildTimeout>
+      <ForceJoinTableGUID />
+      <AvoidJoinTableGUID />
+      <Elements>
+        <ReportElement>
+          <GUID>e8d6891a-46f7-47fe-a770-d3d2800a5e06</GUID>
+          <Name>dbo.SalesOrder.OrderDate</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Default</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format>d</Format>
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Row</PivotPosition>
+          <SortOrder>Automatic Ascendant</SortOrder>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Max</AggregateFunction>
+          <CalculationOption>No</CalculationOption>
+          <ShowTotal>No</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>Axis</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>ScatterChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>99d528c4-6d63-4232-80ce-f22be82eea10</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+        </ReportElement>
+        <ReportElement>
+          <GUID>6c555292-97c8-47cb-970c-c17adaeab13f</GUID>
+          <Name>dbo.SalesOrder.OrderQty</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Default</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format>N0</Format>
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Data</PivotPosition>
+          <SortOrder>Automatic Ascendant</SortOrder>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Sum</AggregateFunction>
+          <CalculationOption>No</CalculationOption>
+          <ShowTotal>Column</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>NVD3Serie</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>Line</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>7dd2782e-7af0-40bf-9185-d2354a5186c2</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+        </ReportElement>
+        <ReportElement>
+          <GUID>71a1c6cd-18d7-4eda-8d7e-c186bfdcf2b2</GUID>
+          <Name>dbo.SalesOrder.OrderQty</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayName>OrderQtyPer</DisplayName>
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Percentage0</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format>P0</Format>
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Data</PivotPosition>
+          <SortOrder>Automatic Ascendant</SortOrder>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Sum</AggregateFunction>
+          <CalculationOption>PercentageAll</CalculationOption>
+          <ShowTotal>Column</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>None</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>ScatterChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>7dd2782e-7af0-40bf-9185-d2354a5186c2</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+        </ReportElement>
+        <ReportElement>
+          <GUID>fba1f4c8-0cff-4df7-8956-4f05774deaa3</GUID>
+          <Name>dbo.SalesOrder.Amount</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Default</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format>N0</Format>
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Data</PivotPosition>
+          <SortOrder>Automatic Ascendant</SortOrder>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Sum</AggregateFunction>
+          <CalculationOption>No</CalculationOption>
+          <ShowTotal>Column</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>NVD3Serie</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>MultiBarChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Secondary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>24f84a95-263a-471c-a197-a35f4a2e18c0</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+        </ReportElement>
+        <ReportElement>
+          <GUID>95d194f2-aa23-4b6b-b287-1b535472966c</GUID>
+          <Name>dbo.SalesOrder.Amount</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayName>AmountPer</DisplayName>
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Percentage0</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format>P0</Format>
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Data</PivotPosition>
+          <SortOrder>Automatic Ascendant</SortOrder>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Sum</AggregateFunction>
+          <CalculationOption>PercentageAll</CalculationOption>
+          <ShowTotal>Column</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>None</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>ScatterChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>24f84a95-263a-471c-a197-a35f4a2e18c0</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+        </ReportElement>
+      </Elements>
+      <Restriction>[7b5fc976-cdda-4f7e-b1be-4c9d237832e4]
+AND [040237f2-4b3a-4a11-8f9f-78fc472cc629]</Restriction>
+      <Restrictions>
+        <ReportRestriction>
+          <GUID>7b5fc976-cdda-4f7e-b1be-4c9d237832e4</GUID>
+          <Name>dbo.SalesOrder.ProjectId</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Default</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format>N0</Format>
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Row</PivotPosition>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Sum</AggregateFunction>
+          <CalculationOption>No</CalculationOption>
+          <ShowTotal>No</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>None</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>ScatterChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>f9b73707-64db-4eef-9d50-82207e7395e8</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+          <Prompt>None</Prompt>
+          <Required>false</Required>
+          <TypeRe>Default</TypeRe>
+          <DateTimeStandardFormatRe>Default</DateTimeStandardFormatRe>
+          <NumericStandardFormatRe>Default</NumericStandardFormatRe>
+          <FormatRe>N0</FormatRe>
+          <UseAsParameter>false</UseAsParameter>
+          <Operator>Equal</Operator>
+          <Value1>999999</Value1>
+          <EnumValues />
+          <Date1>0001-01-01T00:00:00</Date1>
+          <Date2>0001-01-01T00:00:00</Date2>
+          <Date3>0001-01-01T00:00:00</Date3>
+          <Date4>0001-01-01T00:00:00</Date4>
+        </ReportRestriction>
+        <ReportRestriction>
+          <GUID>040237f2-4b3a-4a11-8f9f-78fc472cc629</GUID>
+          <Name>dbo.SalesOrder.OrderDate</Name>
+          <Type>Default</Type>
+          <IsAggregate>false</IsAggregate>
+          <Category>Master</Category>
+          <Tag />
+          <DisplayOrder>0</DisplayOrder>
+          <NumericStandardFormat>Default</NumericStandardFormat>
+          <DateTimeStandardFormat>Default</DateTimeStandardFormat>
+          <Format>d</Format>
+          <HasHTMLTags xsi:nil="true" />
+          <DrillChildren />
+          <DrillUpOnlyIfDD>false</DrillUpOnlyIfDD>
+          <SubReports />
+          <PivotPosition>Row</PivotPosition>
+          <TypeEd>Default</TypeEd>
+          <AggregateFunction>Max</AggregateFunction>
+          <CalculationOption>No</CalculationOption>
+          <ShowTotal>No</ShowTotal>
+          <TotalAggregateFunction>Sum</TotalAggregateFunction>
+          <SerieDefinition>None</SerieDefinition>
+          <AxisUseValues>true</AxisUseValues>
+          <SerieType>Point</SerieType>
+          <Nvd3Serie>ScatterChart</Nvd3Serie>
+          <XAxisType>Primary</XAxisType>
+          <YAxisType>Primary</YAxisType>
+          <SerieSortOrder>Ascending</SerieSortOrder>
+          <SerieSortType>Y</SerieSortType>
+          <MetaColumnGUID>99d528c4-6d63-4232-80ce-f22be82eea10</MetaColumnGUID>
+          <DrillEnabled>true</DrillEnabled>
+          <SubReportsEnabled>true</SubReportsEnabled>
+          <Prompt>None</Prompt>
+          <Required>false</Required>
+          <TypeRe>Default</TypeRe>
+          <DateTimeStandardFormatRe>Default</DateTimeStandardFormatRe>
+          <NumericStandardFormatRe>Default</NumericStandardFormatRe>
+          <FormatRe>d</FormatRe>
+          <UseAsParameter>false</UseAsParameter>
+          <Operator>Between</Operator>
+          <EnumValues />
+          <Date1>0001-01-01T00:00:00</Date1>
+          <Date2>0001-01-01T00:00:00</Date2>
+          <Date3>0001-01-01T00:00:00</Date3>
+          <Date4>0001-01-01T00:00:00</Date4>
+          <Date1Keyword>Today-30</Date1Keyword>
+          <Date2Keyword>Today</Date2Keyword>
+        </ReportRestriction>
+      </Restrictions>
+      <AggregateRestriction />
+      <AggregateRestrictions />
+    </ReportModel>
+  </Models>
+  <Outputs>
+    <ReportOutput>
+      <GUID>1ccdfc56-adca-4f9c-9eba-1d858d5825b0</GUID>
+      <Name>output (Folder Device)</Name>
+      <OutputDeviceGUID>c428a6ba-061b-4a47-b9bc-f3f02442ab4b</OutputDeviceGUID>
+      <CancelIfNoRecords>false</CancelIfNoRecords>
+      <PreScript />
+      <PostScript />
+      <ViewParameters />
+      <ViewCSS />
+      <ViewGUID>115ba584-507c-44b0-82eb-1401b58a9e2c</ViewGUID>
+      <FolderPath>%SEALREPOSITORY%\Reports</FolderPath>
+      <FileName>%SEALREPORTDISPLAYNAME%</FileName>
+      <EmailHtmlBody>false</EmailHtmlBody>
+      <EmailMessagesInBody>false</EmailMessagesInBody>
+      <EmailZipAttachments>false</EmailZipAttachments>
+      <EmailZipPassword />
+      <EmailSkipAttachments>false</EmailSkipAttachments>
+      <UserName />
+      <UserGroups />
+      <UserCulture />
+      <PublicExec>true</PublicExec>
+      <PublicEdit>true</PublicEdit>
+      <UseCustomRestrictions>false</UseCustomRestrictions>
+      <Restrictions />
+    </ReportOutput>
+  </Outputs>
+  <Tasks />
+  <TasksScript />
+  <Views>
+    <ReportView>
+      <GUID>115ba584-507c-44b0-82eb-1401b58a9e2c</GUID>
+      <Name>DashBoard_Index</Name>
+      <Views>
+        <ReportView>
+          <GUID>3f9f94be-0674-486f-843d-677456147b71</GUID>
+          <Name>Sales_Amount_Day</Name>
+          <Views />
+          <ModelGUID>a51f46e4-ba5a-464e-a102-539e735d27d2</ModelGUID>
+          <TemplateName>Model HTML</TemplateName>
+          <ThemeName />
+          <UseCustomConfiguration>false</UseCustomConfiguration>
+          <UseCustomTemplate>false</UseCustomTemplate>
+          <Parameters>
+            <Parameter>
+              <Name>show_data_tables</Name>
+              <Value>False</Value>
+            </Parameter>
+            <Parameter>
+              <Name>chart_nvd3_title</Name>
+              <Value>Sales per Day</Value>
+            </Parameter>
+          </Parameters>
+          <CultureName />
+          <CSS>
+            <Parameter>
+              <Name>nvd3_chart</Name>
+              <Value>height:600px; width:700px; page-break-inside:avoid;</Value>
+            </Parameter>
+            <Parameter>
+              <Name>chart</Name>
+              <Value>position:absolute; top:50px; left:50px;</Value>
+            </Parameter>
+          </CSS>
+          <SortOrder>1</SortOrder>
+          <ChartConfigurationXml />
+          <WebExec>true</WebExec>
+          <PdfConfigurations />
+          <ExcelConfigurations />
+        </ReportView>
+        <ReportView>
+          <GUID>2e3ea4fd-1c00-40dd-ab7c-7da51218db7b</GUID>
+          <Name>CH_Amount</Name>
+          <Views />
+          <ModelGUID>3dd45745-518b-454b-8d7d-2ef2d1165f50</ModelGUID>
+          <TemplateName>Model HTML</TemplateName>
+          <ThemeName />
+          <UseCustomConfiguration>false</UseCustomConfiguration>
+          <UseCustomTemplate>false</UseCustomTemplate>
+          <Parameters>
+            <Parameter>
+              <Name>show_data_tables</Name>
+              <Value>False</Value>
+            </Parameter>
+            <Parameter>
+              <Name>chart_nvd3_title</Name>
+              <Value>Sales per Channel</Value>
+            </Parameter>
+          </Parameters>
+          <CultureName />
+          <CSS>
+            <Parameter>
+              <Name>nvd3_chart</Name>
+              <Value>height:600px; width:700px; page-break-inside:avoid;</Value>
+            </Parameter>
+            <Parameter>
+              <Name>chart</Name>
+              <Value>position:absolute; top:50px; left:800px;</Value>
+            </Parameter>
+          </CSS>
+          <SortOrder>2</SortOrder>
+          <ChartConfigurationXml />
+          <WebExec>true</WebExec>
+          <PdfConfigurations />
+          <ExcelConfigurations />
+        </ReportView>
+      </Views>
+      <ModelGUID />
+      <TemplateName>Report</TemplateName>
+      <ThemeName />
+      <UseCustomConfiguration>false</UseCustomConfiguration>
+      <UseCustomTemplate>false</UseCustomTemplate>
+      <Parameters>
+        <Parameter>
+          <Name>converter_button</Name>
+          <Value>False</Value>
+        </Parameter>
+        <Parameter>
+          <Name>display_messages</Name>
+          <Value>False</Value>
+        </Parameter>
+      </Parameters>
+      <CultureName />
+      <CSS />
+      <SortOrder>1</SortOrder>
+      <WebExec>true</WebExec>
+      <PdfConfigurations />
+      <ExcelConfigurations />
+    </ReportView>
+    <ReportView>
+      <GUID>16f04d83-4e73-441d-99b3-ed5b886ed105</GUID>
+      <Name>CSV</Name>
+      <Views>
+        <ReportView>
+          <GUID>63a7da5b-ca83-4d95-87c7-98d870472ecd</GUID>
+          <Name>CH_Amount</Name>
+          <Views />
+          <ModelGUID>3dd45745-518b-454b-8d7d-2ef2d1165f50</ModelGUID>
+          <TemplateName>Model CSV Excel</TemplateName>
+          <ThemeName />
+          <UseCustomConfiguration>false</UseCustomConfiguration>
+          <UseCustomTemplate>false</UseCustomTemplate>
+          <Parameters />
+          <CultureName />
+          <CSS />
+          <SortOrder>1</SortOrder>
+          <WebExec>true</WebExec>
+          <PdfConfigurations />
+          <ExcelConfigurations />
+        </ReportView>
+        <ReportView>
+          <GUID>7046565d-beee-4fd0-a7c5-924da582990f</GUID>
+          <Name>Sales_Amount_Day</Name>
+          <Views />
+          <ModelGUID>a51f46e4-ba5a-464e-a102-539e735d27d2</ModelGUID>
+          <TemplateName>Model CSV Excel</TemplateName>
+          <ThemeName />
+          <UseCustomConfiguration>false</UseCustomConfiguration>
+          <UseCustomTemplate>false</UseCustomTemplate>
+          <Parameters />
+          <CultureName />
+          <CSS />
+          <SortOrder>2</SortOrder>
+          <WebExec>true</WebExec>
+          <PdfConfigurations />
+          <ExcelConfigurations />
+        </ReportView>
+      </Views>
+      <ModelGUID />
+      <TemplateName>Report</TemplateName>
+      <ThemeName />
+      <UseCustomConfiguration>false</UseCustomConfiguration>
+      <UseCustomTemplate>false</UseCustomTemplate>
+      <Parameters />
+      <CultureName />
+      <CSS />
+      <SortOrder>2</SortOrder>
+      <WebExec>true</WebExec>
+      <PdfConfigurations />
+      <ExcelConfigurations />
+    </ReportView>
+  </Views>
+  <DisplayName />
+  <InitScript />
+  <ViewGUID>115ba584-507c-44b0-82eb-1401b58a9e2c</ViewGUID>
+  <Schedules />
+</Report>
