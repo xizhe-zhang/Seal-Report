@@ -476,7 +476,20 @@ namespace SealWebServer.Controllers
 
                 var execution = initReportExecution(report, viewGUID, outputGUID);
                 execution.RenderHTMLDisplayForViewer();
-                return getFileResult(report.HTMLDisplayFilePath, report);
+                //return getFileResult(report.HTMLDisplayFilePath, report);
+
+                execution.Execute();
+                while (report.Status != ReportStatus.Executed)
+                {
+                    Console.WriteLine("waiting...");
+                    Thread.Sleep(100);
+                }
+                
+                Helper.WriteLogEntryWeb(EventLogEntryType.Information, "Viewing result of report {1} for user '{0}'", WebUser.Name, report.FilePath);
+                if (report.HasErrors) Helper.WriteLogEntryWeb(EventLogEntryType.Error, "Report {0} ({1}) execution errors:\r\n{2}", report.FilePath, WebUser.Name, report.ExecutionErrors);
+                string filePath2 = report.ForOutput || report.HasExternalViewer ? report.HTMLDisplayFilePath : report.ResultFilePath;
+                if (!System.IO.File.Exists(filePath2)) throw new Exception("Error: Result file path does not exists...");
+                return getFileResult(filePath2, report);
             }
             catch (Exception ex)
             {
